@@ -1,18 +1,23 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 ::-webkit-scrollbar {
     width: 10px;
   }
+
 ::-webkit-scrollbar-track {
     background: inherit;
 }
+
 ::-webkit-scrollbar-thumb {
-    background: darkcyan;
+    background: #08FF00;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background: darkcyan;
+    background: #08FF00;
 }
 
 body {
@@ -20,19 +25,40 @@ body {
     grid-template-rows: 1fr auto auto;
     height: 100vh;
 }
+
 main {
     overflow-x: hidden;
     overflow-y: scroll;
+    font-size: 25px;
 }
+
+.logo {
+    height: 200px;
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
 h1, main p, div, footer {
     padding: 20px 30px;
 }
-h1, p, span {
-    font-size: 2rem;
+
+.inputBox {
+    background-color: #08FF00;
+    font-size: 30px;
 }
-div {
-    background-color: darkcyan;
-}
+
 .blink {
     opacity: 0;
 }
+
+footer {
+    background-color: #2E2E2E;
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+

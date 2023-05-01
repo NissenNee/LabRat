@@ -1,4 +1,4 @@
-// Variabler
+// Variables
 const inputField = document.querySelector("#userInput");
 const main = document.querySelector("main");
 let userInput = [];
@@ -17,26 +17,27 @@ const addText = (text) => {
     main.lastChild.scrollIntoView();
 }
 
-// Backpack
-const backpack = {
-    pokemon: ["Pikachu"],
-    pokeballCount: 2,
-    berryCount: 0,
-    seeBackpack: function() {
-        this.pokemon.forEach(item => {
-            addText(item)
-        });
-        addText(`Pokeballs: ${this.pokeballCount}`);
-        // addText("Pokeballs: " + this.pokeballCount);
-        addText(`Berries: ${this.berryCount}`);
-    }
-}
+// Objects
 
-// Arrow function
+// const backpack = {
+//     pokemon: ["Pikachu"],
+//     pokeballCount: 2,
+//     berryCount: 0,
+//     seeBackpack: function() {
+//         this.pokemon.forEach(item => {
+//             addText(item)
+//         });
+//         addText(`Pokeballs: ${this.pokeballCount}`);
+//         // addText("Pokeballs: " + this.pokeballCount);
+//         addText(`Berries: ${this.berryCount}`);
+//     }
+// }
+
+// Functions
 const whatToDo = (userInput) => {
     switch(userInput) {
         case "help":
-            addText("Heeeelp");
+            addText("To give a command, you write the command using the keyboard and press enter. Possible commands include 'yes', 'no', 'maybe', and 'inspect' and 'use' plus the object you want to 'inspect' or 'use'.");
             break;
         case "backpack":
         case "storage":
@@ -54,8 +55,6 @@ const whatToDo = (userInput) => {
 }
 
 // Keyboard event
-
-
 document.addEventListener("keydown", (e) => {
     switch(true) {
         case e.code.startsWith("Key"):
