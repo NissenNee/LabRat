@@ -146,7 +146,13 @@ const whatToDo = (userInput) => {
             *If you need help, use the "help" command by writing help with the keyboard and pressing enter.`);
     }
 
-//    if/else
+    // if () {
+    //     ;
+    //   } else if () {
+    //     ;
+    //   } else {
+    //     ;
+    //   }
 }
 
 // Keyboard event
