@@ -11,15 +11,19 @@ setInterval(function() {
 
 // Insert text
 const addText = (text) => {
-    let paragraph = document.createElement(`p`); // Lav en paragraph
+    let paragraph = document.createElement(`p`);
     paragraph.innerText = text;
     main.appendChild(paragraph);
     main.lastChild.scrollIntoView();
 }
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Objects
 
-// pockets (availableRoom eks. "5/10", items eks. "piece of metal", "nametag")
+
+// (availableRoom eks. "5/10", items eks. "piece of metal")
+
 
 // const backpack = {
 //     pokemon: ["Pikachu"],
@@ -35,19 +39,21 @@ const addText = (text) => {
 //    }
 // }
 
-// Functions
-const whatToDo = (userInput) => {
-    switch(userInput) {
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Switch Functions
+// const whatToDo = (userInput) => {
+//     switch(userInput) {
         
-        // case `start`:
-        //     addText(`Welcome to "LabRat", a text-based game that puts you in the shoes of an unwilling subject in a crazy experiment. 
-        //     Your goal is to escape the lab, but it won´t be easy. The mad scientists running the experiment have put a series of bizarre and dangerous puzzles and challenges in your way. You'll have to use your wits and your problem-solving skills to solve these and make your way out of the lab.
-        //     Along the way you will meet other participants trapped in the lab with you. Helping them might help you. But be careful! Not everyone can be trusted. Will you be able to outsmart the challenges and escape? There´s only one way to find out.
+//         case `start`:
+//             addText(`Welcome to "LabRat", a text-based game that puts you in the shoes of an unwilling subject in a crazy experiment. 
+//             Your goal is to escape the lab, but it won´t be easy. The mad scientists running the experiment have put a series of bizarre and dangerous puzzles and challenges in your way. You'll have to use your wits and your problem-solving skills to solve these and make your way out of the lab.
+//             Along the way you will meet other participants trapped in the lab with you. Helping them might help you. But be careful! Not everyone can be trusted. Will you be able to outsmart the challenges and escape? There´s only one way to find out.
             
-        //     Are you ready to start?
+//             Are you ready to start?
             
-        //     *Write your response in the green box and press enter.`)
-        //     break;
+//             *Write your response in the green box and press enter.`)
+//             break;
            
         // case `help`:
         //     addText(`To give a command, write the command using the keyboard and press enter.
@@ -58,7 +64,7 @@ const whatToDo = (userInput) => {
         // case `yes`:
         //     addText(`You find yourself lying on a metal gurney in a cold, sterile room with seemingly no windows or doors. The walls are made of large metal plates, and the only source of light comes from a single fluorescent lightbulb dangling from the ceiling. You try to remember how you got here, but your memory is fuzzy. What do you do?
             
-        //     *You can use inspect to get a closer look at things.`);
+        //     *You can use inspect to get a closerstart look at things.`);
         //     break;
        
         // case `no`:
@@ -140,20 +146,17 @@ const whatToDo = (userInput) => {
 
         // // turn on the light
 
-        default: 
-            addText(`Sorry, I don´t understand?
+        // default: 
+        //     addText(`Sorry, I don´t understand?
             
-            *If you need help, use the "help" command by writing help with the keyboard and pressing enter.`);
-    }
+        //     *If you need help, use the "help" command by writing help with the keyboard and pressing enter.`);
+//     }
+// }
 
-    // if () {
-    //     ;
-    //   } else if () {
-    //     ;
-    //   } else {
-    //     ;
-    //   }
-}
+  
+// Conditional statements
+
+
 
 // Keyboard event
 document.addEventListener(`keydown`, (e) => {
