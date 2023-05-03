@@ -33,27 +33,45 @@ body {
     height: 100vh;
 }
 
+// .nametag {
+//     display: none;
+// }
+
+// .metalpiece {
+//     display: none;
+// }
+
+// .camera {
+//     display: none;
+// }
+
+// .lightsoff {
+//     display: none;
+// }
+
 main {
     overflow-x: hidden;
     overflow-y: scroll;
     font-size: 25px;
+    padding: 20px 30px;
+    margin: 0 40px;
 }
 
 .logo {
-    height: 200px;
+    position: sticky;
+    top: 0;
     max-width: 300px;
-    margin: auto;
+    margin: 0 auto 20px;
     display: flex;
     justify-content: center;
-}
-
-h1, main p, div, footer {
-    padding: 20px 30px;
+    
 }
 
 .inputBox {
     background-color: $green;
     font-size: 30px;
+    padding: 20px 30px;
+    margin:  0 40px 40px;
 }
 
 .blink {
@@ -67,5 +85,6 @@ footer {
     color: $white;
     display: flex;
     justify-content: space-between;
+    padding: 20px 30px;
 }
 
