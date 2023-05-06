@@ -38,6 +38,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
+    position: fixed;
 }
 
 // .bgImg {
@@ -84,12 +85,12 @@ body {
     
 // }
 
-// .inputBox {
-//     background-color: $green;
-//     font-size: 30px;
-//     padding: 20px 30px;
-//     margin:  0 40px 40px;
-// }
+.userInput {
+    background-color: $green;
+    font-size: 30px;
+    padding: 20px 30px;
+    margin:  0 40px 40px;
+}
 
 .blink {
     opacity: 0;
