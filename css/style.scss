@@ -64,7 +64,8 @@ body {
 .text {
     max-width: 80vw;
     background-color: $white;
-    padding: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
 }
 
 // main {
@@ -73,16 +74,6 @@ body {
 //     font-size: 25px;
 //     padding: 20px 30px;
 //     margin: 0 40px;
-// }
-
-// .logo {
-//     position: sticky;
-//     top: 0;
-//     max-width: 300px;
-//     margin: 0 auto 20px;
-//     display: flex;
-//     justify-content: center;
-    
 // }
 
 .userInput {
