@@ -1,6 +1,6 @@
 // Variables
 const inputField = document.querySelector(`#userInput`);
-const main = document.querySelector(`main`);
+const textBox = document.querySelector(`textBox`);
 let userInput = [];
 
 // Blinking square
