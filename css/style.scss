@@ -41,21 +41,30 @@ body {
     background-color: $black;
 }
 
-button {
-    padding: 10px 20px;
-    width: fit-content;
-    height: fit-content;
+.btn {
     background-color: $grey;
     border: 1px solid $black;
+    padding: 10px 20px;
+    margin: 5px 15px;
     font-size: 15px;
+    text-decoration: none;
     color: $white;
     position: absolute;
     right: 0%;
+    
 }
 
-button:hover {
+.btn:hover {
     background-color: $red;
     border: 1px solid $white;
+}
+
+.logo {
+    max-width: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 main {
@@ -70,12 +79,8 @@ main > p {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-.logo {
-    max-width: 250px;
-    margin: auto;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+.hints {
+    color: $red;
 }
 
 .inputField {

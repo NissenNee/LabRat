@@ -32,23 +32,29 @@ body {
   background-color: #000000;
 }
 
-button {
-  padding: 10px 20px;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.btn {
   background-color: #707070;
   border: 1px solid #000000;
+  padding: 10px 20px;
+  margin: 5px 15px;
   font-size: 15px;
+  text-decoration: none;
   color: #FFFFFF;
   position: absolute;
   right: 0%;
 }
 
-button:hover {
+.btn:hover {
   background-color: #FF0000;
   border: 1px solid #FFFFFF;
+}
+
+.logo {
+  max-width: 250px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -63,12 +69,8 @@ main > p {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.logo {
-  max-width: 250px;
-  margin: auto;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
+.hints {
+  color: #FF0000;
 }
 
 .inputField {
