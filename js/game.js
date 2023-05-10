@@ -3,9 +3,9 @@ const inputField = document.querySelector(`#userInput`);
 const main = document.querySelector(`main`);
 const square = document.querySelector(`.fa-square`);
 const items = [`nametag`, `metal piece`]
-
 let userInput = [];
 
+// Inventory object
 let inventory = {
     space: 5,
     spaceUsed: 1,
@@ -13,6 +13,7 @@ let inventory = {
     items: [`nametag`]
 }
 
+// Hints
 const hints = {
     hint1: `*To use a command: Type the command using the keyboard and press enter.`,
     hint2: `*Use the command "help" if you need instructions`,
@@ -26,6 +27,7 @@ const hints = {
     hint10: `*to use the command "drop": Type "drop" and the item you want to drop`
 }
 
+// Commands
 const commands = [
     `start`,
     `yes`, 
@@ -49,6 +51,7 @@ const commands = [
     `use nametag`,
 ];
 
+// Storyline
 const txt = {
     introTxt: 
         `Welcome to "LabRat", a text-based game that puts you in the shoes of an unwilling subject in a crazy experiment. 
@@ -150,7 +153,7 @@ const txt = {
     },
 }
 
-// Functions
+// whatToDo function
 const whatToDo = (input) => {
     switch (input) {
         case 'help':
@@ -251,6 +254,7 @@ const whatToDo = (input) => {
     }
   };
 
+// Instructions
 const help = {
     displayHints: () => {
       Object.values(hints).forEach((hint, index) => {
@@ -265,6 +269,7 @@ const help = {
     }
   };
 
+// Show inventory
 const displayInventory = () => {
     if (inventory.items.length === 0) {
       addText(txt.pockets.txt1);
@@ -279,7 +284,7 @@ const displayInventory = () => {
     addText(hints.hint8);
 };
 
-// hvis inventory er fuld
+// Inventory full
 addItem = () => {
     if (inventory.availableSpace === 0) {
         addText(txt.pockets.txt2);
