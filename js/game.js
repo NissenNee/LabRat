@@ -332,7 +332,7 @@ document.addEventListener(`keydown`, (e) => {
 })
 
 // touch event
-inputField,addEventListener(`touchstart`, (e) => {
-    console.log(e)
-    inputField.focus();
-});
+/* Her skulle der være et touch event, så når man spillede via sin smartphone, ville man kunne trykke på inputFielt og et default keyboard ville poppe up */
+// inputField,addEventListener(`touchstart`, () => {
+//     inputField.focus();
+// });
