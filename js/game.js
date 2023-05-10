@@ -330,3 +330,9 @@ document.addEventListener(`keydown`, (e) => {
             // Do nothing
     }
 })
+
+// touch event
+inputField,addEventListener(`touchstart`, (e) => {
+    console.log(e)
+    inputField.focus();
+});
